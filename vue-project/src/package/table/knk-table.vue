@@ -1,6 +1,6 @@
 <script setup>
 import {provide, ref} from "vue";
-import KnkTableItem from "@/components/KNKComp/table/knk-table-item.vue";
+import KnkTableItem from "@/package/table/knk-table-item.vue";
 
 const props = defineProps({
   data: Array
@@ -22,7 +22,7 @@ provide('regHeaders', regHeaders)
 </script>
 
 <template>
-  <table style="border: 1px solid black;padding: 2px;text-align: center">
+  <table style="border: 1px solid black;padding: 2px;text-align: center;min-width: 100px;min-height: 100px">
 <!--    表头-->
     <thead>
     <tr>
@@ -43,5 +43,4 @@ provide('regHeaders', regHeaders)
 </template>
 
 <style scoped>
-
 </style>
